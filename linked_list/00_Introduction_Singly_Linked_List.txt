@@ -1,0 +1,47 @@
+Introduction - Singly Linked List : 
+
+1. Each node in a singly-linked list contains not only the value but also a reference field to 
+   link to the next node. By this way, the singly-linked list organizes all the nodes in a sequence.
+
+2. In most cases, we will use the head node (the first node) to represent the whole list.
+
+public class SinglyListNode {
+    int val;
+    SinglyListNode next;
+    SinglyListNode(int x) { val = x; }
+}
+
+
+Operations : 
+
+Access : Unlike the array, we are not able to access a random element in a singly-linked list in constant time. 
+If we want to get the ith element, we have to traverse from the head node one by one.
+It takes us O(N) time on average to visit an element by index, where N is the length of the linked list.
+
+You might wonder why the linked list is useful though it has such a bad performance 
+(compared to the array) in accessing data by index. 
+The insert and delete operations will realize the benefit of the linked list.
+LinkedList has O(n) time complexity for arbitrary indices of add/remove, 
+but O(1) for operations at end/beginning of the List.
+
+Add : Unlike an array, we don’t need to move all elements past the inserted element. 
+Therefore, you can insert a new node into a linked list in O(1) time complexity (amortised)
+
+Delete : If we want to delete an existing node cur from the singly linked list, we can do it in two steps:
+a. Find cur's previous node prev and its next node next
+b. Link prev to cur's next node next.
+
+In our first step, we need to find out prev and next. 
+It is easy to find out next using the reference field of cur. 
+However, we have to traverse the linked list from the head node to find out prev 
+which will take O(N) time on average, where N is the length of the linked list. 
+So the time complexity of deleting a node will be O(N).
+
+The space complexity is O(1) because we only need constant space to store our pointers.
+
+
+NOTE:
+Amortized analysis is a method of analyzing the costs associated with a data structure that 
+averages the worst operations out over time.
+https://brilliant.org/wiki/amortized-analysis/
+
