@@ -31,4 +31,24 @@ class LinkedListCycle {
 
 	}
 
+	/*
+	 * Once the slow/fast pointer meets, it becomes a math problem.
+	 */
+	public static boolean hasCycleApproach(Node head) {
+
+		if (head == null || head.next == null) {
+			return false;
+		}
+		Node slow = head;
+		Node fast = head.next;
+		while (slow != null && fast.next != null && fast.next.next != null) {
+			if (slow == fast)
+				return true;
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		return false;
+
+	}
+
 }

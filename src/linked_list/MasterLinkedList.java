@@ -29,6 +29,7 @@ public class MasterLinkedList {
 		System.out.println("Index at linkedList index after deletion is " + param);
 		obj.printLinkedList();
 		System.out.println("Cycle is present in Linked List : "+ LinkedListCycle.hasCycle(obj.head));
+		System.out.println("Cycle is present in Linked List : "+ LinkedListCycle.hasCycleApproach(obj.head));
 		System.out.println("Cycle Node in Linked List is : "+ LinkedListCycleNode.detectCycleNode(obj.head));
 
 	}

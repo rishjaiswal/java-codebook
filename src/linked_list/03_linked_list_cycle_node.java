@@ -14,6 +14,15 @@ class LinkedListCycleNode {
 	 * 
 	 */
 	public static Node detectCycleNode(Node head) {
+		/*
+		 * 1. just like in Linked List Cycle. Keep looking. If found a slow==fast, break
+		 * the 1st while loop. 
+		 * 2. At that moment, the slow is not the cycle starting
+		 * point. We need to look for it There must be some proof within the 2nd step,
+		 * which i dont know. SO, need sort of remember it: When head == slow.next, then
+		 * head is the cycle starting point .... (not exactly sure why. I guess this is
+		 * why it's a hard question)
+		 */
 
 		if (head == null)
 			return null;
