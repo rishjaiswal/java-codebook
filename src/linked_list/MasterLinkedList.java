@@ -1,6 +1,8 @@
 package linked_list;
 
 import linked_list.MyLinkedList;
+import linked_list.LinkedListCycle;
+import linked_list.LinkedListCycleNode;
 
 public class MasterLinkedList {
 
@@ -26,6 +28,8 @@ public class MasterLinkedList {
 		param = obj.get(1);
 		System.out.println("Index at linkedList index after deletion is " + param);
 		obj.printLinkedList();
+		System.out.println("Cycle is present in Linked List : "+ LinkedListCycle.hasCycle(obj.head));
+		System.out.println("Cycle Node in Linked List is : "+ LinkedListCycleNode.detectCycleNode(obj.head));
 
 	}
 
