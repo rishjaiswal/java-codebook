@@ -137,7 +137,7 @@ class MyLinkedList {
 	public void printLinkedList() {
 		Node curr = head;
 		System.out.println("Linked List is :  ");
-		for (int i = 0; i < length; i++) {
+		while (curr != null) {
 			System.out.print(curr.val + " ");
 			curr = curr.next;
 		}
