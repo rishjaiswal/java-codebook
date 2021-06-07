@@ -5,6 +5,8 @@ import linked_list.LinkedListCycle;
 import linked_list.LinkedListCycleNode;
 import linked_list.LinkedListRemove;
 import linked_list.LinkedListIntersection;
+import linked_list.LinkedListReverse;
+import linked_list.LinkedListRemoveElements;
 
 public class MasterLinkedList {
 
@@ -32,6 +34,7 @@ public class MasterLinkedList {
 		obj.printLinkedList();
 		System.out.println("Cycle is present in Linked List : " + LinkedListCycle.hasCycle(obj.head));
 		System.out.println("Cycle is present in Linked List : " + LinkedListCycle.hasCycleApproach(obj.head));
+		System.out.println("Cycle is present in Linked List using Second Approach : " + LinkedListCycle.hasCycleSecondApproach(obj.head));
 		System.out.println("Cycle Node in Linked List is : " + LinkedListCycleNode.detectCycleNode(obj.head));
 		System.out.println("Head of First Linked List is " + obj.head + " and value is " + obj.head.val);
 		// Linked list 2
@@ -44,17 +47,26 @@ public class MasterLinkedList {
 		System.out.println("Head of Second Linked List is " + obj_second.head + " and value is " + obj_second.head.val);
 		System.out.println("Intersection Node in Linked List First and Second is is : "
 				+ LinkedListIntersection.getIntersectionNode(obj.head, obj_second.head));
-		System.out.println(" First Linked List before deletion ");
+		System.out.println("First Linked List before deletion ");
 		obj.printLinkedList();
 		System.out.println("Head of First Linked List after deletion index 1 from last end ");
 		obj.head = LinkedListRemove.removeNthFromEnd(obj.head, 1);
-		System.out.println(" First Linked List after deletion ");
+		System.out.println("First Linked List after deletion ");
 		obj.printLinkedList();
-		System.out.println(" Second Linked List before deletion ");
+		System.out.println("Second Linked List before deletion ");
 		obj_second.printLinkedList();
 		System.out.println("Head of First Linked List after deletion index 2 from last end ");
 		obj_second.head = LinkedListRemove.removeNthFromEnd(obj_second.head, 2);
-		System.out.println(" Second Linked List after deletion ");
+		System.out.println("Second Linked List after deletion ");
+		obj_second.printLinkedList();
+		obj_second.head = LinkedListReverse.reverseList(obj_second.head);
+		System.out.println("Second Linked List Head after Reverse");
+		obj_second.printLinkedList();
+		obj_second.addAtHead(5);
+		System.out.println("Second Linked List before deletion ");
+		obj_second.printLinkedList();
+		obj_second.head = LinkedListRemoveElements.removeElements(obj_second.head, 5);
+		System.out.println("Second Linked List after deletion ");
 		obj_second.printLinkedList();
 
 	}
