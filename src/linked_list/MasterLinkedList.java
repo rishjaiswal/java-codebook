@@ -10,6 +10,8 @@ import linked_list.LinkedListRemoveElements;
 import linked_list.LinkedListPartition;
 import linked_list.LinkedListNumber;
 import linked_list.LinkedListLinks;
+import linked_list.LinkedListPalindrome;
+import linked_list.LinkedListMiddle;
 
 public class MasterLinkedList {
 
@@ -85,7 +87,10 @@ public class MasterLinkedList {
 		obj_second.head = LinkedListLinks.oddEvenLinks(obj_second.head);
 		System.out.println("Second Linked List after Parition by Even Odd Node Links ");
 		obj_second.printLinkedList();
-
+		System.out.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
+		obj_second.printLinkedList();
+		obj_second.head = LinkedListMiddle.middleNode(obj_second.head);
+		System.out.println("Second Linked List after from Middle Node ");
+		obj_second.printLinkedList();
 	}
-
 }
