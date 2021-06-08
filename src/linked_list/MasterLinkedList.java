@@ -7,6 +7,9 @@ import linked_list.LinkedListRemove;
 import linked_list.LinkedListIntersection;
 import linked_list.LinkedListReverse;
 import linked_list.LinkedListRemoveElements;
+import linked_list.LinkedListPartition;
+import linked_list.LinkedListNumber;
+import linked_list.LinkedListLinks;
 
 public class MasterLinkedList {
 
@@ -34,7 +37,8 @@ public class MasterLinkedList {
 		obj.printLinkedList();
 		System.out.println("Cycle is present in Linked List : " + LinkedListCycle.hasCycle(obj.head));
 		System.out.println("Cycle is present in Linked List : " + LinkedListCycle.hasCycleApproach(obj.head));
-		System.out.println("Cycle is present in Linked List using Second Approach : " + LinkedListCycle.hasCycleSecondApproach(obj.head));
+		System.out.println("Cycle is present in Linked List using Second Approach : "
+				+ LinkedListCycle.hasCycleSecondApproach(obj.head));
 		System.out.println("Cycle Node in Linked List is : " + LinkedListCycleNode.detectCycleNode(obj.head));
 		System.out.println("Head of First Linked List is " + obj.head + " and value is " + obj.head.val);
 		// Linked list 2
@@ -67,6 +71,19 @@ public class MasterLinkedList {
 		obj_second.printLinkedList();
 		obj_second.head = LinkedListRemoveElements.removeElements(obj_second.head, 5);
 		System.out.println("Second Linked List after deletion ");
+		obj_second.printLinkedList();
+		obj_second.addAtHead(9);
+		obj_second.printLinkedList();
+		obj_second.head = LinkedListPartition.partition(obj_second.head, 5);
+		System.out.println("Second Linked List after Parition by Node value 5 ");
+		obj_second.printLinkedList();
+		obj_second.head = LinkedListNumber.oddEven(obj_second.head);
+		System.out.println("Second Linked List after Parition by Even Odd Node Values ");
+		obj_second.printLinkedList();
+		obj_second.addAtTail(8);
+		obj_second.printLinkedList();
+		obj_second.head = LinkedListLinks.oddEvenLinks(obj_second.head);
+		System.out.println("Second Linked List after Parition by Even Odd Node Links ");
 		obj_second.printLinkedList();
 
 	}
