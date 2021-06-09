@@ -12,6 +12,7 @@ import linked_list.LinkedListNumber;
 import linked_list.LinkedListLinks;
 import linked_list.LinkedListPalindrome;
 import linked_list.LinkedListMiddle;
+import linked_list.DoublyLinkedList;
 
 public class MasterLinkedList {
 
@@ -92,5 +93,12 @@ public class MasterLinkedList {
 		obj_second.head = LinkedListMiddle.middleNode(obj_second.head);
 		System.out.println("Second Linked List after from Middle Node ");
 		obj_second.printLinkedList();
+		// Design Doubly LinkedList
+		DoublyLinkedList obj_doubly = new DoublyLinkedList();
+		System.out.println("Index at linkedList index is " + obj_doubly.get(1));
+		obj_doubly.addAtHead(1);
+		obj_doubly.addAtTail(3);
+		obj_doubly.addAtIndex(1, 2);
+		obj_doubly.printDoublyLinkedList();
 	}
 }
