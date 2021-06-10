@@ -1,4 +1,4 @@
-Introduction - Doublu Linked List : 
+Introduction - Doubly Linked List : 
 
 1. The doubly linked list works in a similar way but has one more reference field which is known as the "prev" field. 
 With this extra field, you are able to know the previous node of the current node.

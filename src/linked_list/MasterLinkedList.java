@@ -13,6 +13,8 @@ import linked_list.LinkedListLinks;
 import linked_list.LinkedListPalindrome;
 import linked_list.LinkedListMiddle;
 import linked_list.DoublyLinkedList;
+import linked_list.LinkedListMerge;
+import linked_list.LinkedListAdd;
 
 public class MasterLinkedList {
 
@@ -88,7 +90,8 @@ public class MasterLinkedList {
 		obj_second.head = LinkedListLinks.oddEvenLinks(obj_second.head);
 		System.out.println("Second Linked List after Parition by Even Odd Node Links ");
 		obj_second.printLinkedList();
-		System.out.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
+		System.out
+		.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
 		obj_second.printLinkedList();
 		obj_second.head = LinkedListMiddle.middleNode(obj_second.head);
 		System.out.println("Second Linked List after from Middle Node ");
@@ -100,5 +103,17 @@ public class MasterLinkedList {
 		obj_doubly.addAtTail(3);
 		obj_doubly.addAtIndex(1, 2);
 		obj_doubly.printDoublyLinkedList();
+		System.out.println("Before Merging Linked Lists :");
+		obj.printLinkedList();
+		obj_second.printLinkedList();
+		obj.head = LinkedListMerge.mergeTwoLists(obj.head, obj_second.head);
+		System.out.println("After Merging Linked Lists :");
+		obj.printLinkedList();
+		System.out.println("Before Adding Linked Lists :");
+		obj.printLinkedList();
+		obj_second.printLinkedList();
+		System.out.println("After Adding Linked Lists :");
+		obj.head = LinkedListAdd.addTwoNumbers(obj.head, obj_second.head);
+		obj.printLinkedList();
 	}
 }
