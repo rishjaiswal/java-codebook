@@ -1,20 +1,6 @@
 package linked_list;
 
-import linked_list.MyLinkedList;
-import linked_list.LinkedListCycle;
-import linked_list.LinkedListCycleNode;
-import linked_list.LinkedListRemove;
-import linked_list.LinkedListIntersection;
-import linked_list.LinkedListReverse;
-import linked_list.LinkedListRemoveElements;
-import linked_list.LinkedListPartition;
-import linked_list.LinkedListNumber;
-import linked_list.LinkedListLinks;
-import linked_list.LinkedListPalindrome;
-import linked_list.LinkedListMiddle;
-import linked_list.DoublyLinkedList;
-import linked_list.LinkedListMerge;
-import linked_list.LinkedListAdd;
+import linked_list.*;
 
 public class MasterLinkedList {
 
@@ -91,7 +77,7 @@ public class MasterLinkedList {
 		System.out.println("Second Linked List after Parition by Even Odd Node Links ");
 		obj_second.printLinkedList();
 		System.out
-		.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
+				.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
 		obj_second.printLinkedList();
 		obj_second.head = LinkedListMiddle.middleNode(obj_second.head);
 		System.out.println("Second Linked List after from Middle Node ");
@@ -114,6 +100,8 @@ public class MasterLinkedList {
 		obj_second.printLinkedList();
 		System.out.println("After Adding Linked Lists :");
 		obj.head = LinkedListAdd.addTwoNumbers(obj.head, obj_second.head);
+		obj.printLinkedList();
+		obj.head = LinkedListRotate.rotateRight(obj.head, 1);
 		obj.printLinkedList();
 	}
 }
