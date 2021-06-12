@@ -101,6 +101,7 @@ public class MasterLinkedList {
 		System.out.println("After Adding Linked Lists :");
 		obj.head = LinkedListAdd.addTwoNumbers(obj.head, obj_second.head);
 		obj.printLinkedList();
+		System.out.println("After Rotation Linked Lists :");
 		obj.head = LinkedListRotate.rotateRight(obj.head, 1);
 		obj.printLinkedList();
 	}
