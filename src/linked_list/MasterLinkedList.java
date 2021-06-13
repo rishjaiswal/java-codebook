@@ -104,5 +104,17 @@ public class MasterLinkedList {
 		System.out.println("After Rotation Linked Lists :");
 		obj.head = LinkedListRotate.rotateRight(obj.head, 1);
 		obj.printLinkedList();
+		obj.addAtHead(1);
+		obj.addAtTail(3);
+		obj.printLinkedList();
+		System.out.println("After Reverse Only Linked Lists by 3 Size");
+		obj.head = LinkedListReverseNodes.reverseKGroupOnly(obj.head, 3);
+		obj.printLinkedList();
+		System.out.println("After Reverse Linked Lists  by 3 and less Size");
+		obj.head = LinkedListReverseNodes.reverseKGroup(obj.head, 3);
+		obj.printLinkedList();
+		System.out.println("After Reverse Linked Lists  between Node 2 and Node 4");
+		obj.head = LinkedListReverseII.reverseBetween(obj.head,2,4);
+		obj.printLinkedList();
 	}
 }

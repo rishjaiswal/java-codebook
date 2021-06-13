@@ -13,6 +13,9 @@ class LinkedListRotate {
 	 * Given the head of a linked list, rotate the list to the right by k places.
 	 */
 	public static Node rotateRight(Node A, int B) {
+		/*
+		 * [1,2,3,4,5] 2 = [4,5,1,2,3]
+		 */
 
 		if (B == 0 || A == null)
 			return A;
@@ -41,6 +44,30 @@ class LinkedListRotate {
 		A = slow.next;
 		slow.next = null;
 
+		return A;
+
+	}
+
+	public static Node rotateLeft(Node A, int B) {
+		/*
+		 * [1,2,3,4,5] 2 = [3,4,5,1,2]
+		 */
+
+		if (B == 0 || A == null)
+			return A;
+		Node temp = A;
+		for (int i = 1; i < B; i++) {
+			if (temp.next == null)
+				return A;
+			temp = temp.next;
+		}
+		Node slow = temp;
+		while (temp.next != null) {
+			temp = temp.next;
+		}
+		temp.next = A;
+		A = slow.next;
+		slow.next = null;
 		return A;
 
 	}
