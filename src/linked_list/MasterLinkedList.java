@@ -1,6 +1,8 @@
 package linked_list;
 
+import java.util.ArrayList;
 import linked_list.*;
+import linked_list.MyLinkedList.Node;
 
 public class MasterLinkedList {
 
@@ -77,7 +79,7 @@ public class MasterLinkedList {
 		System.out.println("Second Linked List after Parition by Even Odd Node Links ");
 		obj_second.printLinkedList();
 		System.out
-				.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
+		.println("Linked List is palindrome : " + LinkedListPalindrome.isPalindrome_approach(obj_second.head));
 		obj_second.printLinkedList();
 		obj_second.head = LinkedListMiddle.middleNode(obj_second.head);
 		System.out.println("Second Linked List after from Middle Node ");
@@ -114,7 +116,32 @@ public class MasterLinkedList {
 		obj.head = LinkedListReverseNodes.reverseKGroup(obj.head, 3);
 		obj.printLinkedList();
 		System.out.println("After Reverse Linked Lists  between Node 2 and Node 4");
-		obj.head = LinkedListReverseII.reverseBetween(obj.head,2,4);
+		obj.head = LinkedListReverseII.reverseBetween(obj.head, 2, 4);
 		obj.printLinkedList();
+		System.out.println("After Sorting the Linked List");
+		obj.head = LinkedListSort.sortList(obj.head);
+		obj.printLinkedList();
+		obj.addAtHead(1);
+		obj.addAtTail(9);
+		obj.addAtIndex(3, 5);
+		obj.printLinkedList();
+		System.out.println("After Removing Duplicates from Linked List using Approach I");
+		obj.head = LinkedListRemoveDuplicates.deleteDuplicates(obj.head);
+		obj.printLinkedList();
+		obj.addAtHead(1);
+		obj.addAtTail(9);
+		obj.addAtIndex(3, 5);
+		obj.printLinkedList();
+		System.out.println("After Removing All Duplicates from Linked List using Approach II");
+		obj.head = LinkedListRemoveDuplicates.deleteDuplicatesAll(obj.head);
+		obj.printLinkedList();
+		obj.addAtHead(8);
+		obj.addAtTail(3);
+		obj.addAtHead(5);
+		obj.printLinkedList();
+		System.out.println("After Removing  Duplicates from Unsorted Linked List");
+		obj.head = LinkedListRemoveDuplicatesUnsorted.deleteDuplicatesUnsorted(obj.head);
+		obj.printLinkedList();
+		
 	}
 }
