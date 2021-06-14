@@ -1,0 +1,67 @@
+Introduction - Binary Tree : 
+
+1. A binary tree is a hierarchal data structure in which each node has at most two children. 
+   The child nodes are called the left child and the right child..
+
+2. To start with, let’s describe the linked list representation of a binary tree in which each node has three f
+  a. Pointer to store the address of the left child
+  b. Data element
+  c. Pointer to store the address of the right child
+
+/* Class containing left and right child of current
+   node and key value*/
+class TreeNode
+{
+    int key;
+    Node left, right;
+ 
+    public TreeNode(int item)
+    {
+        key = item;
+        left = right = null;
+    }
+}
+
+
+Properties : 
+
+A binary tree can have a maximum of 2^{l} nodes at level l if the level of the root is zero.
+When each node of a binary tree has one or two children, the number of leaf nodes (nodes with no children) is one more than the number of nodes that have two children.
+There exists a maximum of (2^{h}-1) nodes in a binary tree if its height is h, and the height of a leaf node is one.
+If there exist L leaf nodes in a binary tree, then it has at least L+1 levels.
+A binary tree of n nodes has \log_{2}(n+1) minimum number of levels or minimum height.
+The minimum and the maximum height of a binary tree having n nodes are \lceil \log_{2}n \rceil and n, respectively.
+ A binary tree of n nodes has (n+1) null references.
+
+
+Types :
+
+1.Full Binary Tree - 
+A binary tree is said to be a full binary tree when each internal node has zero or two children:
+
+2.Perfect Binary Tree - 
+A perfect binary tree is a special type of binary tree in which all the leaf nodes are at the same level,
+ and each internal node has two children:
+ 
+3.Complete Binary Tree- 
+A binary tree is referred to as a complete binary tree when all of its levels are completely filled. 
+The only exception is possibly the lowest level in which the nodes must lean as left as possible:
+
+4.Degenerate or Pathological Tree-
+A degenerate or pathological tree is a type of binary tree in which each internal node has a single child,
+ either the left child or the right child:
+ 
+5.Skewed Binary Tree- 
+A  binary tree is said to be a skewed binary tree if all of its internal nodes have exactly one child, 
+and either left children or right children dominate the tree.
+ In particular, there exist two types of skewed binary trees: 
+ left-skewed binary tree and the right-skewed binary tree:
+ 
+6.Balanced Binary Tree-
+A  balanced binary tree is also a special type of binary tree in which the difference of height 
+between the left and the right subtrees for each node is at most one:
+
+
+Applications :
+Rreal-life applications of a binary tree include binary space partition, heap sort, Huffman coding, 
+virtual memory management, and indexing.
