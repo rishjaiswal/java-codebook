@@ -37,5 +37,15 @@ public class MasterTree {
 		PreOrderTraversal.preorderTraversalIterative(root);
 		System.out.println("Pre-Order Traversal of Tree Recursively");
 		PreOrderTraversal.preorderTraversalRecursion(root);
+		System.out.println(" ");
+		System.out.println("In-Order Traversal of Tree Iteratively");
+		InOrderTraversal.inorderTraversalIterative(root);
+		System.out.println("In-Order Traversal of Tree Recursively");
+		InOrderTraversal.inorderTraversalRecursion(root);
+		System.out.println(" ");
+		System.out.println("Post-Order Traversal of Tree Iteratively");
+		PostOrderTraversal.postorderTraversalIterative(root);
+		System.out.println("Post-Order Traversal of Tree Recursively");
+		PostOrderTraversal.postorderTraversalRecursion(root);
 	}
 }
