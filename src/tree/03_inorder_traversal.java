@@ -46,6 +46,17 @@ class InOrderTraversal {
 			System.out.println("Tree is Empty");
 			return;
 		}
-		System.out.println("To-Do Implementation of Iterative Approach ");
+		Stack<TreeNode> st = new Stack<TreeNode>();
+		TreeNode curr = root;
+		while (!st.isEmpty() || curr != null) {
+			while (curr != null) {
+				st.push(curr);
+				curr = curr.left;
+			}
+			curr = st.pop();
+			System.out.print(curr.data + " ");
+			curr = curr.right;
+		}
+		System.out.println(" ");
 	}
 }

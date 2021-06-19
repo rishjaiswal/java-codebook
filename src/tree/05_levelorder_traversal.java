@@ -4,15 +4,15 @@
 
 package tree;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import tree.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class LevelOrderTraversal {
 
 	/*
-	 * Given the root of a binary tree, return the levelorder traversal of its
-	 * nodes values recursively
+	 * Given the root of a binary tree, return the levelorder traversal of its nodes
+	 * values recursively
 	 * 
 	 * Time Complexity - O(n2) For a skewed tree printCurrentLevel() takes o(n) So
 	 * time complexity of levelorderTraversalRecursion() is O(n) + O(n-1) +....O(1)
@@ -37,7 +37,7 @@ class LevelOrderTraversal {
 	}
 
 	public static void printCurrentLevel(TreeNode root, int level) {
-		if (root ==null)
+		if (root == null)
 			return;
 		if (level == 1)
 			System.out.print(root.data + " ");
@@ -48,14 +48,30 @@ class LevelOrderTraversal {
 	}
 
 	/*
-	 * Given the root of a binary tree, return the levelorder traversal of its nodes'
-	 * values iteratively
+	 * Given the root of a binary tree, return the levelorder traversal of its
+	 * nodes' values iteratively
 	 */
 	public static void levelorderTraversalIterative(TreeNode root) {
 		if (root == null) {
 			System.out.println("Tree is Empty");
 			return;
 		}
-		System.out.println("To-Do Implementation of Iterative Approach ");
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
+			TreeNode tempNode = queue.poll();
+			System.out.print(tempNode.data + " ");
+
+			/* Enqueue left child */
+			if (tempNode.left != null) {
+				queue.add(tempNode.left);
+			}
+
+			/* Enqueue right child */
+			if (tempNode.right != null) {
+				queue.add(tempNode.right);
+			}
+		}
+		System.out.println(" ");
 	}
 }

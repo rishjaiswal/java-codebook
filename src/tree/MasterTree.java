@@ -52,5 +52,14 @@ public class MasterTree {
 		LevelOrderTraversal.levelorderTraversalIterative(root);
 		System.out.println("Level-Order Traversal of Tree Recursively");
 		LevelOrderTraversal.levelorderTraversalRecursion(root);
+		System.out.println(" ");
+		System.out.println("Depth of Binary Tree is "+ MaximumDepth.maxDepth(root));
+		root = MyTree.insert(root, 11);
+		root = MyTree.insert(root, 12);
+		root = MyTree.insert(root, 13);
+		root = MyTree.insert(root, 14);
+		System.out.println("Level-Order Traversal of Tree after Insertion");
+		LevelOrderTraversal.levelorderTraversalIterative(root);
+		System.out.println("Depth of Binary Tree after Insertion is "+ MaximumDepth.maxDepth(root));
 	}
 }

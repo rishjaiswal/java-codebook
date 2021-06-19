@@ -45,6 +45,20 @@ class PostOrderTraversal {
 			System.out.println("Tree is Empty");
 			return;
 		}
-		System.out.println("To-Do Implementation of Iterative Approach ");
+		Stack<TreeNode> st1 = new Stack<TreeNode>();
+		Stack<TreeNode> st2 = new Stack<TreeNode>();
+		st1.add(root);
+		while (!st1.isEmpty()) {
+			TreeNode curr = st1.pop();
+			st2.push(curr);
+			if (curr.left != null)
+				st1.push(curr.left);
+			if (curr.right != null)
+				st1.push(curr.right);
+		}
+		while (!st2.isEmpty()) {
+			System.out.print(st2.pop().data + " ");
+		}
+		System.out.println(" ");
 	}
 }
