@@ -60,6 +60,8 @@ public class MasterTree {
 		root = MyTree.insert(root, 14);
 		System.out.println("Level-Order Traversal of Tree after Insertion");
 		LevelOrderTraversal.levelorderTraversalIterative(root);
-		System.out.println("Depth of Binary Tree after Insertion is "+ MaximumDepth.maxDepthIterative(root));
+		System.out.println("Depth of Binary Tree after Insertion is " + MaximumDepth.maxDepthIterative(root));
+		System.out.println("Tree is Symmetric or not : " + SymmetricTree.isSymmetricIterative(root));
+		System.out.println("Tree is Symmetric or not : " + SymmetricTree.isSymmetric(root));
 	}
 }
