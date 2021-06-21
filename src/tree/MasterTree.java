@@ -63,5 +63,7 @@ public class MasterTree {
 		System.out.println("Depth of Binary Tree after Insertion is " + MaximumDepth.maxDepthIterative(root));
 		System.out.println("Tree is Symmetric or not : " + SymmetricTree.isSymmetricIterative(root));
 		System.out.println("Tree is Symmetric or not : " + SymmetricTree.isSymmetric(root));
+		System.out.println("PathSum is Present in Tree or not : " + PathSum.hasPathSum(root, 13));
+		System.out.println("PathSum is Present in Tree or not : " + PathSum.hasPathSum(root, 25));
 	}
 }
