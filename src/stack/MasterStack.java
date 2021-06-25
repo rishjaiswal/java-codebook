@@ -15,5 +15,8 @@ public class MasterStack {
 		obj.pop();
 		System.out.println("Top Element is after Pop() : " + obj.top());
 		System.out.println("Minimum Element is : " + obj.getMin());
+		System.out.println("Valid Parentheses result is : " + validParentheses.isValid(null));
+		System.out.println("Valid Parentheses result is : " + validParentheses.isValid("()[]{}"));
+		System.out.println("Valid Parentheses result is : " + validParentheses.isValid("([)]"));
 	}
 }
