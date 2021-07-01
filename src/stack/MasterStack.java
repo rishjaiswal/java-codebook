@@ -50,5 +50,37 @@ public class MasterStack {
 		System.out.println("Stack Peek Element is  : " + st.peek());
 		System.out.println("Stack size is  : " + st.size());
 		System.out.println("Stack is Empty  : " + st.isEmpty());
+		stackImplementArrayDynamic dst = new stackImplementArrayDynamic(5);
+		System.out.println("Stack capacity is  : " + dst.capacity);
+		System.out.println("Stack Peek Element is  : " + dst.peek());
+		System.out.println("Stack size is  : " + dst.size());
+		System.out.println("Stack is Empty  : " + dst.isEmpty());
+		dst.push(1);
+		dst.push(2);
+		dst.push(3);
+		System.out.println("Stack Peek Element is  : " + dst.peek());
+		System.out.println("Stack size is  : " + dst.size());
+		System.out.println("Stack is Empty  : " + dst.isEmpty());
+		dst.push(4);
+		dst.push(5);
+		System.out.println("Stack Peek Element is  : " + dst.peek());
+		System.out.println("Stack size is  : " + dst.size());
+		System.out.println("Stack is Empty  : " + dst.isEmpty());
+		dst.push(6);
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		System.out.println("Stack Peek Element is  : " + dst.peek());
+		System.out.println("Stack size is  : " + dst.size());
+		System.out.println("Stack is Empty  : " + dst.isEmpty());
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		System.out.println("Stack Peek Element is  : " + dst.peek());
+		System.out.println("Stack size is  : " + dst.size());
+		System.out.println("Stack is Empty  : " + dst.isEmpty());
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		System.out.println("Stack Peek Element is  : " + dst.peek());
+		System.out.println("Stack size is  : " + dst.size());
+		System.out.println("Stack is Empty  : " + dst.isEmpty());
 	}
 }
