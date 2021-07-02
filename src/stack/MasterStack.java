@@ -50,6 +50,7 @@ public class MasterStack {
 		System.out.println("Stack Peek Element is  : " + st.peek());
 		System.out.println("Stack size is  : " + st.size());
 		System.out.println("Stack is Empty  : " + st.isEmpty());
+		System.out.println("Stack Pop Element is  : " + st.pop());
 		stackImplementArrayDynamic dst = new stackImplementArrayDynamic(5);
 		System.out.println("Stack capacity is  : " + dst.capacity);
 		System.out.println("Stack Peek Element is  : " + dst.peek());
@@ -82,5 +83,38 @@ public class MasterStack {
 		System.out.println("Stack Peek Element is  : " + dst.peek());
 		System.out.println("Stack size is  : " + dst.size());
 		System.out.println("Stack is Empty  : " + dst.isEmpty());
+		System.out.println("Stack Pop Element is  : " + dst.pop());
+		stackImplementLinkedList sst = new stackImplementLinkedList();
+		System.out.println("Stack Peek Element is  : " + sst.peek());
+		System.out.println("Stack size is  : " + sst.size());
+		System.out.println("Stack is Empty  : " + sst.isEmpty());
+		sst.push(1);
+		sst.push(2);
+		sst.push(3);
+		System.out.println("Stack Peek Element is  : " + sst.peek());
+		System.out.println("Stack size is  : " + sst.size());
+		System.out.println("Stack is Empty  : " + sst.isEmpty());
+		sst.push(4);
+		sst.push(5);
+		System.out.println("Stack Peek Element is  : " + sst.peek());
+		System.out.println("Stack size is  : " + sst.size());
+		System.out.println("Stack is Empty  : " + sst.isEmpty());
+		sst.push(6);
+		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Stack Peek Element is  : " + sst.peek());
+		System.out.println("Stack size is  : " + sst.size());
+		System.out.println("Stack is Empty  : " + sst.isEmpty());
+		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Stack Peek Element is  : " + sst.peek());
+		System.out.println("Stack size is  : " + sst.size());
+		System.out.println("Stack is Empty  : " + sst.isEmpty());
+		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Stack Peek Element is  : " + sst.peek());
+		System.out.println("Stack size is  : " + sst.size());
+		System.out.println("Stack is Empty  : " + sst.isEmpty());
+		System.out.println("Stack Pop Element is  : " + sst.pop());
 	}
 }
