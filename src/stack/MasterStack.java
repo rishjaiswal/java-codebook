@@ -116,5 +116,8 @@ public class MasterStack {
 		System.out.println("Stack size is  : " + sst.size());
 		System.out.println("Stack is Empty  : " + sst.isEmpty());
 		System.out.println("Stack Pop Element is  : " + sst.pop());
+		System.out.println("Valid Parentheses result is : " + validParenthesesApproach.isValidSymbol(null));
+		System.out.println("Valid Parentheses result is : " + validParenthesesApproach.isValidSymbol("()[]{}"));
+		System.out.println("Valid Parentheses result is : " + validParenthesesApproach.isValidSymbol("([)]"));
 	}
 }
