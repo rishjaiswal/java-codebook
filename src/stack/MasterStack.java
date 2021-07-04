@@ -119,5 +119,9 @@ public class MasterStack {
 		System.out.println("Valid Parentheses result is : " + validParenthesesApproach.isValidSymbol(null));
 		System.out.println("Valid Parentheses result is : " + validParenthesesApproach.isValidSymbol("()[]{}"));
 		System.out.println("Valid Parentheses result is : " + validParenthesesApproach.isValidSymbol("([)]"));
+		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion(""));
+		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion("A*B-(C+D)+E"));
+		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion("A*B"));
+		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion("(A*B)+C"));
 	}
 }
