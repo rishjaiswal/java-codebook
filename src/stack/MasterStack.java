@@ -123,5 +123,7 @@ public class MasterStack {
 		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion("A*B-(C+D)+E"));
 		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion("A*B"));
 		System.out.println("PostFix Conversion result is : " + infixToPostfix.postfixConversion("(A*B)+C"));
+		System.out.println("PostFix Evaluation result is : " + postFixEvaluation.postfixEvaluation(""));
+		System.out.println("PostFix Evaluation result is : " + postFixEvaluation.postfixEvaluation("123*+5-"));
 	}
 }
