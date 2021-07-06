@@ -127,5 +127,6 @@ public class MasterStack {
 		System.out.println("PostFix Evaluation result is : " + postFixEvaluation.postfixEvaluation("123*+5-"));
 		System.out.println("InFix Evaluation result is : " + inFixEvaluation.infixEvaluation(""));
 		System.out.println("InFix Evaluation result is : " + inFixEvaluation.infixEvaluation("2*3+1-5"));
+		System.out.println("InFix Evaluation result is : " + inFixEvaluation.infixEvaluation("1+2*3-5"));
 	}
 }
