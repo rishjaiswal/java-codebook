@@ -128,5 +128,8 @@ public class MasterStack {
 		System.out.println("InFix Evaluation result is : " + inFixEvaluation.infixEvaluation(""));
 		System.out.println("InFix Evaluation result is : " + inFixEvaluation.infixEvaluation("2*3+1-5"));
 		System.out.println("InFix Evaluation result is : " + inFixEvaluation.infixEvaluation("1+2*3-5"));
+		System.out.println("Palindrome Result is "+ checkPalindrome.isPalindrome("ABXA"));
+		System.out.println("Palindrome Result is "+ checkPalindrome.isPalindrome("ABXBA"));
+		System.out.println("Palindrome Result is "+ checkPalindrome.isPalindrome("121X121"));
 	}
 }
