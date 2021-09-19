@@ -1,0 +1,127 @@
+Introduction - Array :
+
+1.  An array is an object containing a fixed number of values of the same type.
+The elements of an array are indexed, which means we can access them with numbers (called indices).
+
+2. We can consider an array as a numbered list of cells, each cell being a variable holding a value.
+In Java, the numbering starts at 0.
+
+3.here are primitive type arrays and object type arrays. This means we can use arrays of int, float, boolean, …
+But also arrays of String, Object and custom types as well.
+
+
+Setting up an Array - Declaration & Initialisation :
+
+1. There are two ways to declare an array in Java:
+int[] anArray;
+int anOtherArray[];
+
+2. There are multiple ways to initialize an array.
+int[] anArray = new int[10];
+int[] anArray = new int[] {1, 2, 3, 4, 5};
+
+
+Accessing Elements :
+
+1.  To access the elements of an array, we can achieve this by requiring an array cell position.
+anArray[0] = 10;
+System.out.println(anArray[0]);
+
+2.The number between the brackets is the specific position of the array we want to access.
+
+3. When accessing a cell, if the passed index is negative or goes beyond the last cell,
+Java will throw an ArrayIndexOutOfBoundException.
+
+4. We should be careful then not to use a negative index, or an index greater than or equal to the array size.
+
+
+Iterating Over an Array :
+
+1. Accessing elements one by one can be useful, but we might want to iterate through an array
+The first way is to use the for loop:
+int[] anArray = new int[] {1, 2, 3, 4, 5};
+for (int i = 0; i < anArray.length; i++) {
+    System.out.println(anArray[i]);
+}
+
+2. It's possible to loop over arrays using the foreach loop:
+int[] anArray = new int[] {1, 2, 3, 4, 5};
+for (int element : anArray) {
+    System.out.println(element);
+}
+
+Transforming an Array into a List :
+
+1.By creating an empty list and iterating over the array to add its elements to the list:
+int[] anArray = new int[] {1, 2, 3, 4, 5};
+List<Integer> aList = new ArrayList<>();
+for (int element : anArray) {
+    aList.add(element);
+}
+
+2. There is an another way, a little bit more succinct:
+Integer[] anArray = new Integer[] {1, 2, 3, 4, 5};
+List<Integer> aList = Arrays.asList(anArray);
+
+
+From an Array to a Stream :
+
+1. Java 8 we have access to the Stream API and we might want to turn our arrays into Stream.
+Java provides us with the Arrays.stream method for that:
+String[] anArray = new String[] {"Milk", "Tomato", "Chips"};
+Stream<String> aStream = Arrays.stream(anArray);
+
+Sorting Arrays :
+
+The Arrays class provides us with the sort method
+int[] anArray = new int[] {5, 2, 1, 4, 8};
+Arrays.sort(anArray); // anArray is now {1, 2, 4, 5, 8}
+
+Integer[] anotherArray = new Integer[] {5, 2, 1, 4, 8};
+Arrays.sort(anotherArray); // anotherArray is now {1, 2, 4, 5, 8}
+
+NOTE:
+a.Arrays.sort(Object[]) is based on the TimSort algorithm, giving us a time complexity of O(n log(n)). In short, TimSort makes use of the Insertion sort and the MergeSort algorithms.
+However, it is still slower compared to other sorting algorithms like some of the QuickSort implementations.
+b.Arrays.sort(int[])  uses a Dual-Pivot Quicksort algorithm. Its internal implementation from the JDK 10 is typically faster than traditional one-pivot Quicksort.
+This algorithm offers O(n log(n)) average time complexity
+
+Searching in an Array :
+
+Searching an array is pretty simple, we can loop over the array and search our element among the array elements:
+int[] anArray = new int[] {5, 2, 1, 4, 8};
+for (int i = 0; i < anArray.length; i++) {
+    if (anArray[i] == 4) {
+        System.out.println("Found at index " + i);
+        break;
+    }
+}
+
+NOTE:
+If we have a sorted array though, we can use another solution: the binary search.
+
+Concatenating Arrays :
+
+The idea is to create an array which length is the sum of the two arrays to concatenate.
+After that we have to add the elements of the first one and then the elements of the second one:
+int[] anArray = new int[] {5, 2, 1, 4, 8};
+int[] anotherArray = new int[] {10, 4, 9, 11, 2};
+
+int[] resultArray = new int[anArray.length + anotherArray.length];
+for (int i = 0; i < resultArray.length; i++) {
+    resultArray[i] = (i < anArray.length ? anArray[i] : anotherArray[i - anArray.length]);
+}
+
+Varargs :
+
+1. varargs are used to pass an arbitrary number of arguments to a method:
+
+  void varargsMethod(String... varargs) {}
+  This method could take from 0 to an arbitrary number of String arguments.
+
+2. We can also pass an array directly as the argument. :
+
+  String[] anArray = new String[] {"Milk", "Tomato", "Chips"};
+  varargsMethod(anArray);
+
+It is same as arargsMethod("Milk", "Tomato", "Chips");

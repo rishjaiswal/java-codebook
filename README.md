@@ -1,5 +1,10 @@
 # Master Repository for DataStructure and Coding Questions
 
+## Array
+
+- Array stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data
+- JDK 1.5 introduced a new for loop known as foreach loop or enhanced for loop, which enables you to traverse the complete array sequentially without using an index variable.
+
 ## Tree
 
 - Tree data structure comprises of nodes connected in a particular arrangement and they (particularly binary trees) make search operations on the data items easy. 
