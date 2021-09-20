@@ -12,5 +12,9 @@ public class MasterArray {
         System.out.println("Maximum subarray sum is " + KadanesAlogrithm.maxSubArray(num_array));
         int[] nums_array = {-2};
         System.out.println("Maximum subarray sum is " + KadanesAlogrithm.maxSubArray(nums_array));
+        int[] number_array = {1,2,4,5,4};
+        RepeatAndMissing.printDuplicateMissing(number_array);
+        System.out.println("Repeat Number is " +  RepeatAndMissing.findDuplicate(number_array));
+        System.out.println("Missing Number is " +  RepeatAndMissing.findMissing(number_array));
     }
 }
