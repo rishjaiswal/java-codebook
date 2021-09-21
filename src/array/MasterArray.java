@@ -16,5 +16,15 @@ public class MasterArray {
         RepeatAndMissing.printDuplicateMissing(number_array);
         System.out.println("Repeat Number is " +  RepeatAndMissing.findDuplicate(number_array));
         System.out.println("Missing Number is " +  RepeatAndMissing.findMissing(number_array));
+        int[] colors = {0,1,2,1,0};
+        System.out.print("Before Sorting of colors = ");
+        for (int i : colors)
+            System.out.print(i+" ");
+        System.out.println("");
+        SortZeroOneTwo.sortColors(colors);
+        System.out.print("After Sorting of colors = ");
+        for (int i : colors)
+            System.out.print(i+" ");
+        System.out.println("");
     }
 }
