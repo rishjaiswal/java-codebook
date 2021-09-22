@@ -26,5 +26,8 @@ public class MasterArray {
         for (int i : colors)
             System.out.print(i+" ");
         System.out.println("");
+        int[] nums1 = {2, 4, 5, 8, 0, 0, 0, 0, 0};
+        int[] nums2 = {1, 3, 6, 7, 9};
+        MergeSortedArrays.merge(nums1, nums1.length, nums2, nums2.length);
     }
 }
