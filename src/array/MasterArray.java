@@ -29,5 +29,23 @@ public class MasterArray {
         int[] nums1 = {2, 4, 5, 8, 0, 0, 0, 0, 0};
         int[] nums2 = {1, 3, 6, 7, 9};
         MergeSortedArrays.merge(nums1, nums1.length, nums2, nums2.length);
+        int[][] intervals = {{1, 3},{2, 6},{8, 10},{15, 18}};
+        System.out.print("Before merge intervals = ");
+        for(int i =0 ;i<intervals.length;i++) {
+            System.out.print("[");
+            for (int j = 0; j < intervals[i].length; j++)
+                System.out.print(intervals[i][j] + " ");
+            System.out.print("]");
+        }
+        System.out.println("");
+        intervals = MergeIntervals.merge(intervals);
+        System.out.print("After merge intervals = ");
+        for(int i =0 ;i<intervals.length;i++) {
+            System.out.print("[");
+            for (int j = 0; j < intervals[i].length; j++)
+                System.out.print(intervals[i][j] + " ");
+            System.out.print("]");
+        }
+        System.out.println("");
     }
 }
