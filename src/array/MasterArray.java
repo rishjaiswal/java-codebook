@@ -47,5 +47,8 @@ public class MasterArray {
             System.out.print("]");
         }
         System.out.println("");
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        System.out.println("Maximum Price after Single Sell is = " + Stock.maxProfit(prices));
+        System.out.println("Maximum Price after Maximum Sells are = " + Stock.maxProfitSells(prices));
     }
 }
