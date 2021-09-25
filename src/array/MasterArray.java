@@ -12,26 +12,26 @@ public class MasterArray {
         System.out.println("Maximum subarray sum is " + KadanesAlogrithm.maxSubArray(num_array));
         int[] nums_array = {-2};
         System.out.println("Maximum subarray sum is " + KadanesAlogrithm.maxSubArray(nums_array));
-        int[] number_array = {1,2,4,5,4};
+        int[] number_array = {1, 2, 4, 5, 4};
         RepeatAndMissing.printDuplicateMissing(number_array);
-        System.out.println("Repeat Number is " +  RepeatAndMissing.findDuplicate(number_array));
-        System.out.println("Missing Number is " +  RepeatAndMissing.findMissing(number_array));
-        int[] colors = {0,1,2,1,0};
+        System.out.println("Repeat Number is " + RepeatAndMissing.findDuplicate(number_array));
+        System.out.println("Missing Number is " + RepeatAndMissing.findMissing(number_array));
+        int[] colors = {0, 1, 2, 1, 0};
         System.out.print("Before Sorting of colors = ");
         for (int i : colors)
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         System.out.println("");
         SortZeroOneTwo.sortColors(colors);
         System.out.print("After Sorting of colors = ");
         for (int i : colors)
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         System.out.println("");
         int[] nums1 = {2, 4, 5, 8, 0, 0, 0, 0, 0};
         int[] nums2 = {1, 3, 6, 7, 9};
         MergeSortedArrays.merge(nums1, nums1.length, nums2, nums2.length);
-        int[][] intervals = {{1, 3},{2, 6},{8, 10},{15, 18}};
+        int[][] intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
         System.out.print("Before merge intervals = ");
-        for(int i =0 ;i<intervals.length;i++) {
+        for (int i = 0; i < intervals.length; i++) {
             System.out.print("[");
             for (int j = 0; j < intervals[i].length; j++)
                 System.out.print(intervals[i][j] + " ");
@@ -40,7 +40,7 @@ public class MasterArray {
         System.out.println("");
         intervals = MergeIntervals.merge(intervals);
         System.out.print("After merge intervals = ");
-        for(int i =0 ;i<intervals.length;i++) {
+        for (int i = 0; i < intervals.length; i++) {
             System.out.print("[");
             for (int j = 0; j < intervals[i].length; j++)
                 System.out.print(intervals[i][j] + " ");
@@ -50,5 +50,7 @@ public class MasterArray {
         int[] prices = {7, 1, 5, 3, 6, 4};
         System.out.println("Maximum Price after Single Sell is = " + Stock.maxProfit(prices));
         System.out.println("Maximum Price after Maximum Sells are = " + Stock.maxProfitSells(prices));
+        System.out.println("Pascal Triangle for number 3  is " + PascalTriangle.generate(3));
+        System.out.println("Pascal Triangle for number 5  is " + PascalTriangle.generate(5));
     }
 }
