@@ -52,5 +52,9 @@ public class MasterArray {
         System.out.println("Maximum Price after Maximum Sells are = " + Stock.maxProfitSells(prices));
         System.out.println("Pascal Triangle for number 3  is " + PascalTriangle.generate(3));
         System.out.println("Pascal Triangle for number 5  is " + PascalTriangle.generate(5));
+        int[] nums_permutation = {1, 2, 3};
+        NextPermutation.nextPermutation(nums_permutation);
+        int[] nums_permutation_1 = {3, 2, 1};
+        NextPermutation.nextPermutation(nums_permutation_1);
     }
 }
