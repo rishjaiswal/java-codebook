@@ -56,5 +56,8 @@ public class MasterArray {
         NextPermutation.nextPermutation(nums_permutation);
         int[] nums_permutation_1 = {3, 2, 1};
         NextPermutation.nextPermutation(nums_permutation_1);
+        int[] nums_inversion = {1, 20, 6, 4, 5};
+        System.out.println("Number of Inversions using Brute Force Approach is " + InversionArray.getInvCount(nums_inversion));
+        System.out.println("Number of Inversions using Optimised Approach is " + InversionArray.getInvCountOptimised(nums_inversion));
     }
 }
