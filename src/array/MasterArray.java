@@ -59,5 +59,9 @@ public class MasterArray {
         int[] nums_inversion = {1, 20, 6, 4, 5};
         System.out.println("Number of Inversions using Brute Force Approach is " + InversionArray.getInvCount(nums_inversion));
         System.out.println("Number of Inversions using Optimised Approach is " + InversionArray.getInvCountOptimised(nums_inversion));
+        System.out.println("Power of 2 ^ 10 using recursive approach is "+ Power.myPowRecursive( 2,10));
+        System.out.println("Power of 2 ^ -2 using recursive approach is "+ Power.myPowRecursive( 2,-2));
+        System.out.println("Power of 2 ^ 10 is "+ Power.myPow( 2,10));
+        System.out.println("Power of 2 ^ -2 is "+ Power.myPow( 2,-2));
     }
 }
