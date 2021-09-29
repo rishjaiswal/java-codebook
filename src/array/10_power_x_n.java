@@ -23,7 +23,7 @@ class Power {
             return 1;
         if (n == 1)
             return x;
-        
+
         double answer = 1.0;
         long num = n;
         boolean flag = false;

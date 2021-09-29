@@ -63,5 +63,9 @@ public class MasterArray {
         System.out.println("Power of 2 ^ -2 using recursive approach is "+ Power.myPowRecursive( 2,-2));
         System.out.println("Power of 2 ^ 10 is "+ Power.myPow( 2,10));
         System.out.println("Power of 2 ^ -2 is "+ Power.myPow( 2,-2));
+        int[] nums_majority = {2,2,1,1,1,2,2};
+        System.out.println("Majority Element is "+ Majority.majorityElement(nums_majority));
+        System.out.println("Majority Element using HashMap approach is "+ Majority.majorityElementHashMapApproach(nums_majority));
+        System.out.println("Majority Element using Optimised approach is "+ Majority.majorityElementOptimisedApproach(nums_majority));
     }
 }
