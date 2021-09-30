@@ -67,5 +67,6 @@ public class MasterArray {
         System.out.println("Majority Element is "+ Majority.majorityElement(nums_majority));
         System.out.println("Majority Element using HashMap approach is "+ Majority.majorityElementHashMapApproach(nums_majority));
         System.out.println("Majority Element using Optimised approach is "+ Majority.majorityElementOptimisedApproach(nums_majority));
+        MajorityThree.majorityElement(nums_majority);
     }
 }

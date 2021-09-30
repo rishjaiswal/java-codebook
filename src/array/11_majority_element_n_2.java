@@ -59,6 +59,7 @@ class Majority {
                 count=1;
             }
         }
+        // We can calculate the can iterations and then return accordingly either -1 or can.
         return can;
     }
 }
