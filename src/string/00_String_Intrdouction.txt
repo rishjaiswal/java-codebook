@@ -1,0 +1,44 @@
+## Strings :
+Strings, which are widely used in Java programming, are a sequence of characters.
+In Java programming language, strings are treated as objects.
+
+The Java platform provides the String class to create manipulate strings.
+
+The most direct way to create a string is to write −
+String greeting = "Hello world!";
+
+public class StringDemo {
+
+   public static void main(String args[]) {
+      char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };
+      String helloString = new String(helloArray);
+      System.out.println( helloString );
+
+
+      String palindrome = "Dot saw I was Tod";
+      int len = palindrome.length();
+      System.out.println( "String Length is : " + len );
+
+   }
+}
+
+## ConcateningStrings :
+string1.concat(string2);
+
+
+## String Buffer and String Builder :
+The StringBuffer and StringBuilder classes are used when there is a necessity to make a lot of modifications to
+Strings of characters.
+
+Unlike Strings, objects of type StringBuffer and String builder can be modified over and over again without leaving
+behind a lot of new unused objects.
+
+public class Test {
+
+   public static void main(String args[]) {
+      StringBuffer sBuffer = new StringBuffer("test");
+      sBuffer.append(" String Buffer");
+      System.out.println(sBuffer);
+      sBuffer.toString();
+   }
+}
