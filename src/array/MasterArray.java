@@ -68,5 +68,9 @@ public class MasterArray {
         System.out.println("Majority Element using HashMap approach is "+ Majority.majorityElementHashMapApproach(nums_majority));
         System.out.println("Majority Element using Optimised approach is "+ Majority.majorityElementOptimisedApproach(nums_majority));
         MajorityThree.majorityElement(nums_majority);
+        int[] nums_consecutive = {100, 4, 200, 1, 3, 2};
+        System.out.println("Length of the longest consecutive elements sequence = " + LongestSequence.longestConsecutive(nums_consecutive));
+        int[] nums_one = {1, 1, 0, 1, 1, 1};
+        System.out.println("Maximum number of consecutive 1's in the array = " + ConsecutiveOnes.findMaxConsecutiveOnes(nums_one));
     }
 }
