@@ -12,5 +12,8 @@ public class MasterString {
         System.out.println("Minimum window substring of s such that every character in t is " + MinimumWindowSubstring.minWindow(s1, t1));
         String s2 = "A", t2 = "AA";
         System.out.println("Minimum window substring of s such that every character in t is " + MinimumWindowSubstring.minWindow(s2, t2));
+        String sarray[] = {"42", "-42", "4193 with words", "    4193", "3.14"};
+        for (String sa : sarray)
+            System.out.println("Atoi Calculation for string " + sa + " is " + Atoi.getAtoi(sa));
     }
 }
