@@ -24,5 +24,15 @@ public class MasterString {
         for (String svp : svalidPalindrome) {
             System.out.println("Valid Palindrome Result for string " + svp + " is " + ValidPalindrome.isPalindrome(svp));
         }
+        String sroman[] = {"LVIII", "IX", "III"};
+        for (String sr : sroman) {
+            System.out.println("Integer Result for roman string " + sr + " is " + Roman.romanToInt(sr));
+        }
+        String slcp[] = {"flower", "flow", "flight"};
+        System.out.println("Longest Common prefix string is " + Prefix.longestCommonPrefix(slcp));
+        System.out.println("Longest Common prefix string using Optimised Approach is " + Prefix.longestCommonPrefixOptimsed(slcp));
+        System.out.println("Implementation of strstr() is " + ImplementStrStr.strStr("hello", "ll"));
+        System.out.println("Anagram result is " + ValidAnagram.isAnagram("anagram", "nagaram"));
+        System.out.println("Unique character of string " + s1 + " is " + Unique.firstUniqChar(s1));
     }
 }
