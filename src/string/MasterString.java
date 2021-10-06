@@ -20,7 +20,7 @@ public class MasterString {
             System.out.println("Valid Parentheses Result for string " + sv + " is " + ValidParentheses.isValid(sv));
             System.out.println("Valid Parentheses Result using Optimised Approach for string " + sv + " is " + ValidParentheses.isValidOptimised(sv));
         }
-        String svalidPalindrome [] = {"A man, a plan, a canal: Panama", "race a car"};
+        String svalidPalindrome[] = {"A man, a plan, a canal: Panama", "race a car"};
         for (String svp : svalidPalindrome) {
             System.out.println("Valid Palindrome Result for string " + svp + " is " + ValidPalindrome.isPalindrome(svp));
         }
@@ -34,5 +34,14 @@ public class MasterString {
         System.out.println("Implementation of strstr() is " + ImplementStrStr.strStr("hello", "ll"));
         System.out.println("Anagram result is " + ValidAnagram.isAnagram("anagram", "nagaram"));
         System.out.println("Unique character of string " + s1 + " is " + Unique.firstUniqChar(s1));
+        System.out.println("Duplicate character of string " + s1 + " is " + Duplicate.firstRepeatChar(s1));
+        String sExcel[] = {"FXSHRXW", "AB", "ZY", "A"};
+        for (String se : sExcel)
+            System.out.println("Excel Sheet Number of  " + se + " is " + Excel.titleToNumber(se));
+        String sPalindrome[] = {"babad", "cbbd"};
+        for (String sp : sPalindrome) {
+            System.out.println("Palindromic Substring of string " + sp + " is " + LongestPalindromic.longestPalindrome(sp));
+            System.out.println("Palindromic Substring of string " + sp + " is " + LongestPalindromic.longestPalindromeOptimised(sp));
+        }
     }
 }
