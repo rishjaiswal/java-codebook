@@ -61,4 +61,27 @@ class LongestPalindromic {
         }
         return R - L - 1;
     }
+
+    /* Dry-Run
+    // c b b d
+    1,1, 0 2 2-0-1 = 1
+    1,2 , 0,3 3-0-1 = 2
+
+    1 -(1-1)/2
+    1+ 1/2
+    start = 1-(2-1)/2
+    end = 1+ 2/2
+     */
+
+    public static int expandAroundCenterOptimsed(String s, int left, int right) {
+        int L = left, R = right;
+        int maxLength = 1;
+        while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
+            if (maxLength <= R - L + 1)
+                maxLength = R - L + 1;
+            L--;
+            R++;
+        }
+        return maxLength;
+    }
 }
