@@ -43,5 +43,11 @@ public class MasterString {
             System.out.println("Palindromic Substring of string " + sp + " is " + LongestPalindromic.longestPalindrome(sp));
             System.out.println("Palindromic Substring of string " + sp + " is " + LongestPalindromic.longestPalindromeOptimised(sp));
         }
+        String sDecode[] = {"0", "226", "12"};
+        for (String sd : sDecode) {
+            System.out.println("Number of ways for decoding string " + sd + " is " + Decode.numDecodings(sd));
+        }
+        System.out.println("Generate Parentheses result for number 3 is " + GenerateParenthesis.generateParenthesis(3));
+        System.out.println("Count and Say result for number 5 is " + CountandSay.countAndSay(5));
     }
 }
