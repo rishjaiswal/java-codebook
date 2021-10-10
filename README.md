@@ -27,3 +27,15 @@ Pop(): To remove an element from the stack.
 - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. 
 - The elements in a linked list are linked using pointers
 
+## String 
+
+- The String class represents character strings. All string literals in Java programs, such as "abc", are implemented as instances of this class.
+- Strings are constant; their values cannot be changed after they are created. String buffers support mutable strings. Because String objects are immutable they can be shared.
+
+## BackTracking
+
+- Backtracking is an algorithmic-technique for solving problems recursively by trying to build a solution incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point of time 
+
+## Dynamic Programming.
+
+- A Dynamic programming a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions.
