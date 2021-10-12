@@ -9,3 +9,12 @@ Please refer below example of backtracking :
 - Backtracking can be applied only for problems that admit the concept of a “partial candidate solution” and a relatively quick test of whether it can be completed to a valid solution. 
 - Backtracking is often much faster than brute force enumeration of all candidates since it can eliminate a large number of candidates with a single test.
 
+
+The backtracking algorithms consists of the following steps:
+For Example -https://leetcode.com/problems/palindrome-partitioning/
+
+- Choose: Choose the potential candidate. Here, our potential candidates are all substrings that could be generated from the given string.
+
+- Constraint: Define a constraint that must be satisfied by the chosen candidate. In this case, the constraint is that the string must be a palindrome.
+
+- Goal: We must define the goal that determines if have found the required solution and we must backtrack. Here, our goal is achieved if we have reached the end of the string.

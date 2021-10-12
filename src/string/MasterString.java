@@ -49,5 +49,9 @@ public class MasterString {
         }
         System.out.println("Generate Parentheses result for number 3 is " + GenerateParenthesis.generateParenthesis(3));
         System.out.println("Count and Say result for number 5 is " + CountandSay.countAndSay(5));
+        String sPalindromePermutation[] = {"aab", "abc"};
+        for (String spal : sPalindromePermutation) {
+            System.out.println("Palindrome Partitioning result for String " + spal + " is " + PalindromePartition.partition(spal));
+        }
     }
 }
