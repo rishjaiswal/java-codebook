@@ -59,5 +59,8 @@ public class MasterString {
         words_dict.add("leet");
         words_dict.add("code");
         System.out.println("Word Break Result is "+ WordBreak.wordBreak("leetcode", words_dict));
+        System.out.print("Permutations of String ABC are : ");
+        Permutations.permute("ABC",0,2);
+        System.out.println("");
     }
 }
