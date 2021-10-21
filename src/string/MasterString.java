@@ -2,6 +2,8 @@ package string;
 
 import string.*;
 
+import java.util.ArrayList;
+
 public class MasterString {
 
     public static void main(String args[]) {
@@ -53,5 +55,9 @@ public class MasterString {
         for (String spal : sPalindromePermutation) {
             System.out.println("Palindrome Partitioning result for String " + spal + " is " + PalindromePartition.partition(spal));
         }
+        ArrayList<String> words_dict = new ArrayList<>();
+        words_dict.add("leet");
+        words_dict.add("code");
+        System.out.println("Word Break Result is "+ WordBreak.wordBreak("leetcode", words_dict));
     }
 }
