@@ -58,9 +58,12 @@ public class MasterString {
         ArrayList<String> words_dict = new ArrayList<>();
         words_dict.add("leet");
         words_dict.add("code");
-        System.out.println("Word Break Result is "+ WordBreak.wordBreak("leetcode", words_dict));
+        System.out.println("Word Break Result is " + WordBreak.wordBreak("leetcode", words_dict));
         System.out.print("Permutations of String ABC are : ");
-        Permutations.permute("ABC",0,2);
+        Permutations.permute("ABC", 0, 2);
         System.out.println("");
+        System.out.println("Permutation in String result is " + PermutationCheck.checkInclusion("ab", "eidbaooo"));
+        int[] nums = {3, 30, 34, 5, 9};
+        System.out.println("Largest Number from {3, 30, 34, 5, 9} is " + Largest.largestNumber(nums));
     }
 }
