@@ -12,7 +12,8 @@ class Largest {
         // Get input integers as strings.
         String[] asStrs = new String[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            asStrs[i] = String.valueOf(nums[i]);
+            //asStrs[i] = String.valueOf(nums[i]);
+            asStrs[i] = Integer.toString(nums[i]);
         }
 
         // Sort strings according to custom comparator.

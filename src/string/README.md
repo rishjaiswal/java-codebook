@@ -28,5 +28,14 @@ Here are some more examples of how strings can be used:
 
 
 - String class is an immutable class whereas StringBuffer and StringBuilder classes are mutable.
-- StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.StringBuffer is less efficient than StringBuilder.
-- StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously. StringBuilder is more efficient than StringBuffer
+- StringBuffer is synchronized i.e. thread safe.
+- It means two threads can't call the methods of StringBuffer simultaneously.StringBuffer is less efficient than StringBuilder.
+- StringBuilder is non-synchronized i.e. not thread safe.
+- It means two threads can call the methods of StringBuilder simultaneously. StringBuilder is more efficient than StringBuffer
+
+NOTE :
+asStrs[i] = String.valueOf(nums[i]);
+String.valueOf(charArray);
+String max = hm.keySet().toString();
+res = res + Integer.toString(i);
+sb.toString()
