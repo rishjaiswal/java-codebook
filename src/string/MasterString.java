@@ -67,5 +67,6 @@ public class MasterString {
         System.out.println("Largest Number from {3, 30, 34, 5, 9} is " + Largest.largestNumber(nums));
         System.out.println("CalculatorI result for (1+(4+5+2)-3)+(6+8) is " + CalculatorI.calculate("(1+(4+5+2)-3)+(6+8"));
         System.out.println("CalculatorII result for 33+2*2 is " + CalculatorII.calculate("3+2*2"));
+        System.out.println("Minimum number of operations required to convert word1 to word2 are : "+ EditDistance.minDistance("horse","ros"));
     }
 }
