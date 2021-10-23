@@ -65,5 +65,7 @@ public class MasterString {
         System.out.println("Permutation in String result is " + PermutationCheck.checkInclusion("ab", "eidbaooo"));
         int[] nums = {3, 30, 34, 5, 9};
         System.out.println("Largest Number from {3, 30, 34, 5, 9} is " + Largest.largestNumber(nums));
+        System.out.println("CalculatorI result for (1+(4+5+2)-3)+(6+8) is " + CalculatorI.calculate("(1+(4+5+2)-3)+(6+8"));
+        System.out.println("CalculatorII result for 33+2*2 is " + CalculatorII.calculate("3+2*2"));
     }
 }
