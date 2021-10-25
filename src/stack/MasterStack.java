@@ -51,6 +51,10 @@ public class MasterStack {
 		System.out.println("Stack size is  : " + st.size());
 		System.out.println("Stack is Empty  : " + st.isEmpty());
 		System.out.println("Stack Pop Element is  : " + st.pop());
+		st.push(7);
+		st.push(8);
+		st.push(9);
+		st.push(10);
 		stackImplementArrayDynamic dst = new stackImplementArrayDynamic(5);
 		System.out.println("Stack capacity is  : " + dst.capacity);
 		System.out.println("Stack Peek Element is  : " + dst.peek());
@@ -131,5 +135,11 @@ public class MasterStack {
 		System.out.println("Palindrome Result is "+ checkPalindrome.isPalindrome("ABXA"));
 		System.out.println("Palindrome Result is "+ checkPalindrome.isPalindrome("ABXBA"));
 		System.out.println("Palindrome Result is "+ checkPalindrome.isPalindrome("121X121"));
+		System.out.println("Stack after Reverse " + reverseStack.reverse(st));
+		int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
+		System.out.print("Number of days you have to wait after the ith day to get a warmer temperature are ");
+		for (int x : dailyTemperatures.dailyTemperatures(temperatures))
+			System.out.print(x + " ");
+		System.out.println("");
 	}
 }
