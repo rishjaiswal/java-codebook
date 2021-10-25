@@ -141,5 +141,9 @@ public class MasterStack {
 		for (int x : dailyTemperatures.dailyTemperatures(temperatures))
 			System.out.print(x + " ");
 		System.out.println("");
+		System.out.print("Number of days you have to wait after the ith day to get a warmer temperature are ");
+		for (int x : dailyTemperatures.dailyTemperaturesSecondApproach(temperatures))
+			System.out.print(x + " ");
+		System.out.println("");
 	}
 }
