@@ -145,5 +145,8 @@ public class MasterStack {
 		for (int x : dailyTemperatures.dailyTemperaturesSecondApproach(temperatures))
 			System.out.print(x + " ");
 		System.out.println("");
+		int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+		System.out.println("Water can be trapped from height is " + TrappingRainWater.trap(height));
+		System.out.println("CalculatorII result for 33+2*2 is " + CalculatorIIStack.calculate("3+2*2"));
 	}
 }
