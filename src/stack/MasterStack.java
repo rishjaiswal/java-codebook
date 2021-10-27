@@ -148,5 +148,7 @@ public class MasterStack {
 		int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
 		System.out.println("Water can be trapped from height is " + TrappingRainWater.trap(height));
 		System.out.println("CalculatorII result for 33+2*2 is " + CalculatorIIStack.calculate("3+2*2"));
+		int[] pillars = {2, 1, 5, 6, 2, 3};
+		System.out.println("Trapped water from pillars is " + LargestRectangle.largestRectangleArea(pillars));
 	}
 }
