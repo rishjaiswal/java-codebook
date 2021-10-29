@@ -18,6 +18,15 @@
 Push(): To insert an element in the stack.
 Pop(): To remove an element from the stack.
 
+## Queue
+
+- The queue follows a “FIFO” technique for storing and retrieving elements.
+- It is an ordered list of objects with its use limited to insert elements at the end of the list and deleting elements from the start of the list.
+- The queue has the following primary functions :
+  add() : To add an element in queue
+  remove() : To remove an element from queue
+
+
 ## Recursion
 
 - The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function
