@@ -6,9 +6,10 @@ https://leetcode.com/explore/learn/card/queue-stack/239/conclusion/1387/
 package stack;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 class ImplementStack {
-    LinkedList<Integer> q1;
+    Queue<Integer> q1;
 
     public ImplementStack() {
         q1 = new LinkedList<>();
@@ -35,3 +36,4 @@ class ImplementStack {
         return q1.isEmpty();
     }
 }
+
