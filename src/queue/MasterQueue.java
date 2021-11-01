@@ -13,5 +13,10 @@ public class MasterQueue {
         System.out.println("Dequeue element from queue is " + obj.pop());
         System.out.println("Queue Peek element is " + obj.peek());
         System.out.println("Queue is Empty " + obj.empty());
+        ImplementQueueSingleStack object = new ImplementQueueSingleStack();
+        object.push(10);
+        object.push(20);
+        object.pop();
+        System.out.println("Queue is Empty " + object.empty());
     }
 }
