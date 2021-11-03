@@ -10,7 +10,7 @@ class ImplementQueueUsingArray {
 
     public ImplementQueueUsingArray(int cap) {
         capacity = cap;
-        arr = new int[10];
+        arr = new int[capacity];
         front = 0;
         rear = 0;
     }
@@ -31,12 +31,20 @@ class ImplementQueueUsingArray {
             return -1;
         }
         int x = arr[front];
+        arr[front] =0;
+        front++;
+        if (front == capacity)
+        {
+            front = 0;
+        }
+        /*
         for (int i = 0; i < rear - 1; i++) {
             arr[i] = arr[i + 1];
         }
         if (rear < capacity)
             arr[rear] = 0;
         rear--;
+         */
         return x;
 
     }
