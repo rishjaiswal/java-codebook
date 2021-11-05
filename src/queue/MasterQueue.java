@@ -27,6 +27,10 @@ public class MasterQueue {
         System.out.println("Dequeue element from queue is " + obj_array.dequeue());
         System.out.println("Queue is Empty " + obj_array.empty());
         System.out.println("Queue Peek element is " + obj_array.peek());
-
+        MovingAverage m = new MovingAverage(3);
+        System.out.println("Moving element from average is " + m.next(1));
+        System.out.println("Moving element from average is " + m.next(10));
+        System.out.println("Moving element from average is " + m.next(3));
+        System.out.println("Moving element from average is " + m.next(5));
     }
 }
