@@ -32,5 +32,8 @@ public class MasterQueue {
         System.out.println("Moving element from average is " + m.next(10));
         System.out.println("Moving element from average is " + m.next(3));
         System.out.println("Moving element from average is " + m.next(5));
+        String target = "0202";
+        String deadends[] = {"0201", "0101", "0102", "1212", "2002"};
+        System.out.println("Minimum total number of turns required to open the lock : " + Lock.openLock(deadends, target));
     }
 }
