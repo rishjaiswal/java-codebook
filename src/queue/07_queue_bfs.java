@@ -24,3 +24,19 @@ The processing order of the nodes is the exact same order as how they were added
 That's why we use a queue in BFS.
 
 */
+
+/***
+ * Differences between BFS and DFS :
+ *
+ *  BFS - Queue
+ *  DFS - Stack
+ *
+ *  BFS is slower than DFS.
+ *  BFS is not memory efficient as it requires more memory than DFS.
+ *
+ *  BFS does not use the backtracking concept.
+ *  DFS uses backtracking to traverse all the unvisited nodes.
+ *
+ *  DFS is It is suitable for the decision tree. Based on the decision, it explores all the paths. When the goal is found, it stops its traversal.
+ *
+ */
