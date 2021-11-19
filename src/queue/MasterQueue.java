@@ -35,5 +35,8 @@ public class MasterQueue {
         String target = "0202";
         String deadends[] = {"0201", "0101", "0102", "1212", "2002"};
         System.out.println("Minimum total number of turns required to open the lock : " + Lock.openLock(deadends, target));
+        System.out.println("Number of ways for perfect squares for number 9 are : " + PerfectSquare.numSquares(9));
+        System.out.println("Number of ways for perfect squares for number 7 are : " + PerfectSquare.numSquares(7));
+        System.out.println("Number of ways for perfect squares for number 8 are : " + PerfectSquare.numSquares(8));
     }
 }
