@@ -35,6 +35,9 @@ class Gates {
      *   and searching for its neighbors
      */
     public void wallsAndGates(int[][] rooms) {
+        /*
+        Please refer DFS approach on backtracking package having 09_walls_and_gates.java
+         */
         if (rooms == null || rooms.length == 0) {
             return;
         }

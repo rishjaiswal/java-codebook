@@ -38,5 +38,7 @@ public class MasterQueue {
         System.out.println("Number of ways for perfect squares for number 9 are : " + PerfectSquare.numSquares(9));
         System.out.println("Number of ways for perfect squares for number 7 are : " + PerfectSquare.numSquares(7));
         System.out.println("Number of ways for perfect squares for number 8 are : " + PerfectSquare.numSquares(8));
+        int[][] image = {{1,1,1},{1,1,0},{1,0,1}};
+        System.out.println(FloodFill.floodFill_dfs(image,1,1,55)[1][1]);
     }
 }
