@@ -150,5 +150,6 @@ public class MasterStack {
 		System.out.println("CalculatorII result for 33+2*2 is " + CalculatorIIStack.calculate("3+2*2"));
 		int[] pillars = {2, 1, 5, 6, 2, 3};
 		System.out.println("Trapped water from pillars is " + LargestRectangle.largestRectangleArea(pillars));
+		System.out.println("Decoded result for string s = 3[a]2[bc] is " + DecodeString.decodeString("3[a]2[bc]"));
 	}
 }
