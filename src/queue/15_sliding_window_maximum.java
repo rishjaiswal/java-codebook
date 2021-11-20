@@ -19,6 +19,8 @@ class Window {
         int n=nums.length;
         int result[]=new int[n-k+1];
         // Deque Data structure used as linked list
+        // NOTE : 1. Since Deque is an interface, objects cannot be created of the type deque.
+        //        2. We always need a class which extends this list in order to create an object.
         Deque<Integer> d= new LinkedList();
         for(int i=0;i<nums.length;i++)
         {
