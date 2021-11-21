@@ -1,5 +1,7 @@
 package recursion;
 
+import java.util.Stack;
+
 public class MasterRecursion {
 
 	public static void main(String args[]) {
@@ -8,5 +10,12 @@ public class MasterRecursion {
 		int B[] = { 1, 3, 2, 5, 4 };
 		System.out.println("Array A is sorted : " + checkSortedArray.isArrayInSortedOrder(A, 4));
 		System.out.println("Array A is sorted : " + checkSortedArray.isArrayInSortedOrder(B, 4));
+		Stack<Integer> st = new Stack<>();
+		st.push(2);
+		st.push(4);
+		st.push(1);
+		System.out.println("Stack before sorting : " + st);
+		SortStack.sortStack(st);
+		System.out.println("Stack after sorting : " + st);
 	}
 }

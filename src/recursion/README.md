@@ -9,3 +9,13 @@ Here is an example:
 - How to solve a problem recursively?
 - How to analyze the time and space complexity of a recursive algorithm?
 - How can we apply recursion in a better way?
+
+## Recursive Methodology :
+
+Each time a recursive function calls itself, it reduces the given problem into subproblems.
+The recursion call continues until it reaches a point where the subproblem can be solved without further recursion.
+
+A recursive function should have the following properties so that it does not result in an infinite loop:
+
+- A simple base case (or cases) — a terminating scenario that does not use recursion to produce an answer.
+- A set of rules, also known as recurrence relation that reduces all other cases towards the base case.
