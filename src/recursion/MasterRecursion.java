@@ -17,5 +17,8 @@ public class MasterRecursion {
 		System.out.println("Stack before sorting : " + st);
 		SortStack.sortStack(st);
 		System.out.println("Stack after sorting : " + st);
+		String s = "Rishabh";
+		System.out.println("String before reverse method using recursion : " + s);
+		RecursionString.reverseString(s.toCharArray());
 	}
 }
