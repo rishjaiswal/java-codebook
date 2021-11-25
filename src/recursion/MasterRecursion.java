@@ -20,5 +20,7 @@ public class MasterRecursion {
 		String s = "Rishabh";
 		System.out.println("String before reverse method using recursion : " + s);
 		RecursionString.reverseString(s.toCharArray());
+		System.out.println("Pascal Triangle is : "+ PascalTriangle.getRow(4));
+		System.out.println("Pascal Triangle using Memoization is : "+ PascalTriangleMemoization.getRow(4));
 	}
 }
