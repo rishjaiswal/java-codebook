@@ -22,5 +22,7 @@ public class MasterRecursion {
 		RecursionString.reverseString(s.toCharArray());
 		System.out.println("Pascal Triangle is : "+ PascalTriangle.getRow(4));
 		System.out.println("Pascal Triangle using Memoization is : "+ PascalTriangleMemoization.getRow(4));
+		System.out.println("Fibnocci number is : " + Fibnocci.fib(6));
+		System.out.println("Fibnocci number using Memoization is : " + Fibnocci.fibMemoization(6));
 	}
 }
