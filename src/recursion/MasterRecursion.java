@@ -20,9 +20,11 @@ public class MasterRecursion {
 		String s = "Rishabh";
 		System.out.println("String before reverse method using recursion : " + s);
 		RecursionString.reverseString(s.toCharArray());
-		System.out.println("Pascal Triangle is : "+ PascalTriangle.getRow(4));
-		System.out.println("Pascal Triangle using Memoization is : "+ PascalTriangleMemoization.getRow(4));
+		System.out.println("Pascal Triangle is : " + PascalTriangle.getRow(4));
+		System.out.println("Pascal Triangle using Memoization is : " + PascalTriangleMemoization.getRow(4));
 		System.out.println("Fibnocci number is : " + Fibnocci.fib(6));
 		System.out.println("Fibnocci number using Memoization is : " + Fibnocci.fibMemoization(6));
+		System.out.println("Steps to reach the top at staircase : " + ClimbingStairs.climbStairs(10));
+		System.out.println("Steps to reach the top at staircase : " + ClimbingStairs.climbStairsMemoization(10));
 	}
 }

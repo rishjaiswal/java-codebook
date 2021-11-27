@@ -11,5 +11,6 @@ public class MasterDP {
             System.out.println("Number of ways for decoding string " + sd + " is " + DecodeDP.numDecodings(sd));
         }
         System.out.println("Minimum number of operations required to convert word1 to word2 are : "+ EditDistanceDP.minDistance("horse","ros"));
+        System.out.println("Steps to reach the top at staircase : " + ClimbingStairs.climbStairs(10));
     }
 }

@@ -16,11 +16,14 @@ class Fibnocci {
 
     public static int fibMemoization(int n) {
         int fib[] = new int[n+1];
-        fib_helper(n,fib);
-        return fib[n];
+        return fib_helper(n,fib);
     }
 
     public static int fib_helper(int n , int[] fib){
+        // To avoid calculation again.
+        if(fib[n]>0)
+            return fib[n];
+        // Base Case
         if(n <=1 ) {
             fib[n] = n;
             return fib[n] ;
