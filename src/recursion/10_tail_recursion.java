@@ -20,7 +20,7 @@ class TailRecursion {
         s[start] = s[end];
         s[end] = temp;
 
-
+        // this is a tail recursion because the final instruction is the recursive call.
         helper(++start,--end, s);
     }
 
@@ -40,6 +40,8 @@ class TailRecursion {
         }
         // this is a tail recursion because the final instruction is the recursive call.
         return helper_tail_recursion(start+1, ls, acc+ls[start]);
+
+        // There is only one item at any instance , so space complexity is O(1).
     }
 
 }
@@ -52,4 +54,14 @@ class TailRecursion {
  Note that in tail recursion, we know that as soon as we return from the recursive call we are going to immediately return as well,
  so we can skip the entire chain of recursive calls returning and return straight to the original caller.
  That means we don't need a call stack at all for all of the recursive calls, which saves us space.
+
+
+ ## Conclusion :
+ The tail recursion is basically using the recursive function as the last statement of the function.
+ So when nothing is left to do after coming back from the recursive call, that is called tail recursion
+
+ Tail call optimization reduces the space complexity of recursion from O(n) to O(1) .
+ Our function would require constant memory for execution.
+ It does so by eliminating the need for having a separate stack frame for every call.
+
  */
