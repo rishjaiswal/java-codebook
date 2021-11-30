@@ -26,5 +26,7 @@ public class MasterRecursion {
 		System.out.println("Fibnocci number using Memoization is : " + Fibnocci.fibMemoization(6));
 		System.out.println("Steps to reach the top at staircase : " + ClimbingStairs.climbStairs(10));
 		System.out.println("Steps to reach the top at staircase : " + ClimbingStairs.climbStairsMemoization(10));
+		System.out.println("Power (5,3) is : " + Power.myPow(5.0, 3));
+		System.out.println("Power (5,-3) is : " + Power.myPow(5.0, -3));
 	}
 }
