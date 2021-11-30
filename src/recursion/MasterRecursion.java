@@ -28,5 +28,14 @@ public class MasterRecursion {
 		System.out.println("Steps to reach the top at staircase : " + ClimbingStairs.climbStairsMemoization(10));
 		System.out.println("Power (5,3) is : " + Power.myPow(5.0, 3));
 		System.out.println("Power (5,-3) is : " + Power.myPow(5.0, -3));
+		int arr[] = {1, 2, 3, 4, 5};
+		System.out.println("Array is sorted or not : " + ArrayProblems.isSorted(arr));
+		int arr1[] = {1, 2, 6, 4, 5};
+		System.out.println("Array is sorted or not : " + ArrayProblems.isSorted(arr1));
+		int x1[] = {5, 8, 1, 3};
+		for (int x : x1) {
+			System.out.println("Linear search for " + x + " index is present in array or not  : " + ArrayProblems.search(arr, x));
+			System.out.println("Linear search for " + x + " index is present in array or not : " + ArrayProblems.search(arr1, x));
+		}
 	}
 }
