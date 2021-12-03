@@ -47,5 +47,9 @@ public class MasterRecursion {
 		System.out.println("Pivot element index in rotated sorted array is " + ArrayPivotRotate.findPivot(y));
 		System.out.println("Pivot element in rotated sorted array is " + y[ArrayPivotRotate.findPivot(y)]);
 		System.out.println("Minimum element in rotated sorted array is " + ArrayPivotRotate.findMin(y));
+		System.out.println("Star Print : ");
+		PatternRecursive.print_star(5,0);
+		System.out.println("Star Reverse Print : ");
+		PatternRecursive.print_reverse_star(5,0);
 	}
 }
