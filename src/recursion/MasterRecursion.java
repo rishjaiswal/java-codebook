@@ -1,5 +1,6 @@
 package recursion;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class MasterRecursion {
@@ -51,5 +52,9 @@ public class MasterRecursion {
 		PatternRecursive.print_star(5,0);
 		System.out.println("Star Reverse Print : ");
 		PatternRecursive.print_reverse_star(5,0);
+		int a[] = {1,3,4,2,1};
+		SortingRecursive.sort(a);
+		System.out.println("Array after Sorting using Bubble Sort is ");
+		System.out.println(Arrays.toString(a));
 	}
 }
