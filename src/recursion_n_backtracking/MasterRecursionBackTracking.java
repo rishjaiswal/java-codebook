@@ -11,5 +11,9 @@ public class MasterRecursionBackTracking {
 		System.out.println(PowerN.isPower4(8));
 		System.out.println(PowerN.isPower3(9));
 		System.out.println(PowerN.isPower4(4));
+		int x[] = {1,2,3};
+		Subsets.printSubsets(x);
+		int x1[] = {1,1,2,3};
+		Subsets.printSubsets(x1);
 	}
 }
