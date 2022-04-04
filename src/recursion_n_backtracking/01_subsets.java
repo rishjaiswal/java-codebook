@@ -20,7 +20,7 @@ class Subsets {
     public static void printSubsets(int[] nums) {
         ArrayList<ArrayList<Integer>> al = new ArrayList<>();
         int n = nums.length;
-        for (int k = 0; k < n + 1; ++k) {
+        for (int k = 0; k < n + 1; k++) {
             helper(0, k, new ArrayList<Integer>(), al, nums);
         }
         System.out.println(al);
@@ -33,7 +33,7 @@ class Subsets {
             al.add(new ArrayList(curr));
             return;
         }
-        for (int i = first; i < nums.length; ++i) {
+        for (int i = first; i < nums.length; i++) {
             // add i into the current combination
             curr.add(nums[i]);
             // use next integers to complete the combination
@@ -47,7 +47,11 @@ class Subsets {
     /*
 
     Time Complexity : O(N×2  N  ) to generate all subsets and then copy them into output list.
-    Space Complexity : O(N). We are using  O ( N ) O(N) space to maintain curr, and are …
+    Space Complexity : O(N). We are using  O ( N ) O(N) space to maintain curr
+
+
+    Runtime: 4 ms,
+    Memory Usage: 43.5 MB
 
      */
 }
