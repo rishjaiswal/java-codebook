@@ -22,5 +22,11 @@ public class MasterRecursionBackTracking {
 		System.out.println("Unique Subsets with Duplicate Numbers");
 		SubsetsII.printsubsetsWithDup(x);
 		SubsetsII.printsubsetsWithDup(x1);
+		System.out.println("Start execution of the Permuatation Problems ");
+		Permuatations.permute(x);
+		System.out.println("Permutations with Duplicate Numbers");
+		PermuatationsDuplicate.permuteDuplicate(x1);
+		System.out.println("Unique Permutations with Duplicate Numbers");
+		PermuatationsII.permuteUnique(x1);
 	}
 }
