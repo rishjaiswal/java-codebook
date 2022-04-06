@@ -28,5 +28,12 @@ public class MasterRecursionBackTracking {
 		PermuatationsDuplicate.permuteDuplicate(x1);
 		System.out.println("Unique Permutations with Duplicate Numbers");
 		PermuatationsII.permuteUnique(x1);
+		System.out.println("Combinations Problems");
+		System.out.println(CombinationSum.combinationSum(x,4));
+		System.out.println("Unique Combination with number used only once");
+		System.out.println(CombinationSumII.combinationSum2(x,4));
+		System.out.println(CombinationSumIII.combinationSum3(3,7));
+		System.out.println(CombinationSumIII.combinationSum3(3,9));
+		System.out.println(Combinations.combine(4,2));
 	}
 }
