@@ -36,5 +36,7 @@ public class MasterRecursionBackTracking {
 		System.out.println(CombinationSumIII.combinationSum3(3,9));
 		System.out.println(Combinations.combine(4,2));
 		System.out.println(LetterCombinations.letterCombinations("23"));
+		System.out.println(GenerateParentheses.generateParenthesis(1));
+		System.out.println(GenerateParentheses.generateParenthesis(3));
 	}
 }
