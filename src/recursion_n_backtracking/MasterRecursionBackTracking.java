@@ -38,5 +38,12 @@ public class MasterRecursionBackTracking {
 		System.out.println(LetterCombinations.letterCombinations("23"));
 		System.out.println(GenerateParentheses.generateParenthesis(1));
 		System.out.println(GenerateParentheses.generateParenthesis(3));
+		System.out.println("Maze Related Problems");
+		int m[][] = { { 1, 0, 0, 0, 0 },
+				{ 1, 1, 1, 1, 1 },
+				{ 1, 1, 1, 0, 1 },
+				{ 0, 0, 0, 0, 1 },
+				{ 0, 0, 0, 0, 1 } };
+		System.out.println(Maze.findPath(m));
 	}
 }
