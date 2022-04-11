@@ -45,5 +45,11 @@ public class MasterRecursionBackTracking {
 				{ 0, 0, 0, 0, 1 },
 				{ 0, 0, 0, 0, 1 } };
 		System.out.println(Maze.findPath(m));
+		int maze[][] = { { 1, 0, 0, 0 },
+				{ 1, 1, 1, 1 },
+				{ 1, 1, 1, 0 },
+				{ 1, 0, 1, 1 } };
+		MazeII.solveMaze(maze);
+
 	}
 }
